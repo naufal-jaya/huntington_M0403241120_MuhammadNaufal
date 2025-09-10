@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Test Popup</title>
+  <style>
+    article {
+      cursor: pointer;
+      border: 1px solid #ccc;
+      padding: 10px;
+      display: inline-block;
+      margin: 20px;
+    }
+
+    .popups {
+      display: none;
+      background: lightgray;
+      padding: 20px;
+      border: 1px solid black;
+    }
+  </style>
+</head>
+<script src="logic.js"></script>
+<body>
+
+  <article onclick="openPopup('popup-design')">
+    <p>test pop up</p>
+  </article>
+
+  <div id="popup-design" class="popups">
+    <p>muncul pop upnya</p>
+    <button onclick="closePopup('popup-design')">Close</button>
+  </div>
+
+  <!-- <script>
+    function openPopup(id) {
+      document.getElementById(id).style.display = 'block';
+    }
+
+    function closePopup(id) {
+      document.getElementById(id).style.display = 'none';
+    }
+  </script> -->
+</body>
+</html>
