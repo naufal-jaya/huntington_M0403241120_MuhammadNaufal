@@ -1,28 +1,21 @@
-/* Regular */
 @font-face {
   font-family: 'Montserrat';
   src: url('fonts/Montserrat-Regular.ttf') format('truetype');
   font-weight: 400;
   font-style: normal;
 }
-
-/* Italic */
 @font-face {
   font-family: 'Montserrat';
   src: url('fonts/Montserrat-Italic.ttf') format('truetype');
   font-weight: 400;
   font-style: italic;
 }
-
-/* Bold */
 @font-face {
   font-family: 'Montserrat';
   src: url('fonts/Montserrat-Bold.ttf') format('truetype');
   font-weight: 700;
   font-style: normal;
 }
-
-/* Bold Italic */
 @font-face {
   font-family: 'Montserrat';
   src: url('fonts/Montserrat-BoldItalic.ttf') format('truetype');
@@ -48,7 +41,6 @@ nav {
   position: fixed;       /* tempel di atas header */
   top: 30px;
 }
-
 nav ul {
   list-style: none;         /* hilangin bullet */
   display: flex;            /* jadi horizontal */
@@ -56,14 +48,12 @@ nav ul {
   margin: 0;
   padding: 0;
 }
-
 nav a {
   text-decoration: none;
   color: white;
   font-weight: normal;
   transition: color 0.3s ease;
 }
-
 nav a:hover {
   color: #9E4775; /* abu gelap biar kontras */
 }
@@ -111,6 +101,89 @@ h1 {
 .content h3 {
     font-size: 1.5em;
 }
+
+.popup {
+    position: fixed;
+    background-color: #f1f1f1;
+    width: 1100px;
+    height: 500px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 20px;
+
+    justify-content: center; /* Memusatkan item secara horizontal */
+    align-items: center;     /* Memusatkan item secara vertikal */
+    gap: 20px;       
+    box-shadow: 0 0 20px #dc87b6;
+
+    transform: translate(-50%, -50%) translateY(50px);
+    visibility: hidden;     
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out, visibility 0s 0.5s;
+    display: none;
+
+}
+.popup.active {
+    opacity: 1;
+    transform: translate(-50%, -50%) translateY(0);
+    visibility: visible;
+
+    transition-delay: 0s, 0s, 0s;
+
+    position: fixed;
+    background-color: #f1f1f1;
+    width: 1100px;
+    height: 500px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 20px;
+    justify-content: center; /* Memusatkan item secara horizontal */
+    align-items: center;     /* Memusatkan item secara vertikal */
+    gap: 20px;       
+    box-shadow: 0 0 20px #dc87b6;
+}
+.popup img {
+    width: 250px;
+    max-height: 300px;
+    object-fit: cover;
+    object-position: center;
+    padding: 30px;
+}
+.popup h3{
+    text-shadow: none;
+    color: #9E4775;
+    flex: 1;
+    margin: 0;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    border-bottom: 2px #9E4775 solid;
+    margin-right: 80px;
+    margin-left: 20px;
+    padding: 0;
+}
+.popup p{
+    text-shadow: none;
+    color: #9E4775;
+    flex: 3;
+    padding-right: 80px;
+    margin: 0;
+}
+.left {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+
+}
+.right {
+    flex: 2;
+    height: 360px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
 
 #program {
     background-image: url('images/aboc.png');

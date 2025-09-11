@@ -24,7 +24,7 @@
 
         <h2>What i am passionated about</h2>
 
-        <article id = "program" onclick="openPopup('programPopUp')">
+        <article id = "program" onclick="togglePopup('programPopUp')">
             <h3>Programming</h3>
             <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed hendrerit
@@ -43,8 +43,20 @@
 
         </article>
 
-        <div id="programPopUp"></div>
-        <div id="graphdPopUp"></div>
+        
+        <div class="popup" id="programPopUp" onclick="togglePopup('programPopUp')">
+            <div class="left">
+                <img src="images/amongus.png">
+            </div>
+            <div class="right">
+                <h3>Programming is my way to</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed hendrerit
+                sapien sit amet sapien vehicula, a malesuada turpis suscipit. Donec
+                elementum velit ut sem viverra cursus.</p>
+            </div>
+            
+        </div>
+        <!-- <div class="popup" id="graphdPopUp"></div> -->
     </section>
     
     <section class="content" id="activities">
@@ -52,7 +64,6 @@
         <h2>My Current Activities</h2>
 
         <article >
-            <!-- <img src="images/amongus.jpg" alt="wow"> -->
             <h3>Computer Science Major</h3>
             <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi fermentum
