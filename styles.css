@@ -26,12 +26,16 @@
 * {
     font-family: 'Montserrat', sans-serif;
 }
+body {
+  margin: 0;
+}
 
 header {
   background-color: #F472B6;
   position: relative;   
   height: 650px;    
   display: flex;    
+  flex-direction: column;
   align-items: center;      
   justify-content: center;  
   padding: 20px;
@@ -57,6 +61,13 @@ nav a {
 nav a:hover {
   color: #9E4775; /* abu gelap biar kontras */
 }
+/* TEMPORARY TEST - Add this at the END of your CSS file */
+nav a.scrolled {
+  color: black !important;
+  background-color: yellow !important; /* Very visible change */
+  border: 2px solid red !important;
+}
+
 
 h1 {
   margin: 0;
@@ -64,6 +75,9 @@ h1 {
   font-size: 4rem;
   text-shadow: 5px 5px 0px #9E4775 ;
   text-align: center;
+}
+p {
+  color: white;
 }
 
 .content {
@@ -186,10 +200,41 @@ h1 {
 
 
 #program {
-    background-image: url('images/aboc.png');
+    background-image: url('images/program.png');
 } #program:hover {
-    background-image: url('images/coba.png');
+    background-image: url('images/program_s.png');
 }
+#design {
+  background-image: url('images/design.png');
+} #design:hover {
+  background-image: url('images/design_s.png');
+}
+#college {
+  background-image: url('images/college.png');
+} #college:hover {
+  background-image: url('images/college_s.png');
+}
+#ieee {
+  background-image: url('images/ieee.png');
+} #ieee:hover {
+  background-image: url('images/ieee_s.png');
+}
+#asah {
+  background-image: url('images/asah.png');
+} #asah:hover {
+  background-image: url('images/asah_s.png');
+}
+#cakra {
+  background-image: url('images/cakra.png');
+} #cakra:hover {
+  background-image: url('images/cakra_s.png');
+}
+#fesra {
+  background-image: url('images/fesra.png');
+} #fesra:hover {
+  background-image: url('images/fesra_s.png');
+}
+
  
 
 
