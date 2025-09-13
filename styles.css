@@ -166,20 +166,20 @@ p {
 }
 .popup h3{
     text-shadow: none;
-    color: #9E4775;
+    color: #ad3975;
     flex: 1;
     margin: 0;
     height: 50px;
     display: flex;
     align-items: center;
-    border-bottom: 2px #9E4775 solid;
+    border-bottom: 2px #ad3975 solid;
     margin-right: 80px;
     margin-left: 20px;
     padding: 0;
 }
 .popup p{
     text-shadow: none;
-    color: #9E4775;
+    color: #ad3975;
     flex: 3;
     padding-right: 80px;
     margin: 0;
